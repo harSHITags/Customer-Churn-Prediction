@@ -51,7 +51,7 @@ export const Sidebar: React.FC = () => {
         })}
       </nav>
 
-      {/* Footer system details */}
+      {/* Footer details */}
       <div className="p-4 border-t border-border bg-bg-primary/30">
         <div className="flex items-center gap-2 mb-1">
           <span className="w-2 h-2 rounded-full bg-success animate-ping" />
