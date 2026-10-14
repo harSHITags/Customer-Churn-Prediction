@@ -20,7 +20,7 @@ def main():
     data_path = os.path.join(base_dir, "data", "churn_data.csv")
     artifacts_dir = os.path.join(base_dir, "ml", "artifacts")
     
-    # Load test dataset (must replicate the train split exactly)
+    # Load test dataset    (must replicate the train split exactly)
     print("Loading data...")
     df = pd.read_csv(data_path)
     X = df.drop(columns=['Exited'])
@@ -112,7 +112,7 @@ def main():
         "testing_samples": len(X_test),
         "feature_count": len(FEATURE_NAMES),
         "roc_auc": roc_auc,
-        "f1_score": report["accuracy"], # Let's store accuracy and other metrics
+        "f1_score": report["accuracy"], #  Let's  store accuracy and other metrics
         "macro_f1": report["macro avg"]["f1-score"],
         "weighted_f1": report["weighted avg"]["f1-score"],
         "precision": report["1"]["precision"],
