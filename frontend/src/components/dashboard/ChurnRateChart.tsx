@@ -33,7 +33,7 @@ export const ChurnRateChart: React.FC<ChurnRateChartProps> = ({ data = defaultDa
         <div>
           <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-text-primary">
             CHURN PROBABILITY DISTRIBUTION (HISTOGRAM)
-          </h3>
+       </h3>
           <p className="text-[9px] font-mono text-text-muted mt-0.5">
             FREQUENCY OF CUSTOMERS BY RISK PROBABILITY BINS
           </p>

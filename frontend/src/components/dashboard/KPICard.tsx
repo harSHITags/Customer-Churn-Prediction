@@ -5,7 +5,7 @@ interface KPICardProps {
   title: string;
   value: string | number;
   icon: LucideIcon;
-  subtext?: string;
+  subtext?: string;   
   badge?: React.ReactNode;
   color?: string; // CSS color variable for borders or text
   textColor?: string;

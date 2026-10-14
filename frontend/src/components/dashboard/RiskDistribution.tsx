@@ -5,7 +5,7 @@ import {
   Cell, 
   XAxis, 
   YAxis, 
-  CartesianGrid, 
+  CartesianGrid,   
   Tooltip as RechartsTooltip, 
   ResponsiveContainer 
 } from 'recharts';
