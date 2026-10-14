@@ -1,0 +1,19 @@
+[
+  "CreditScore",
+  "Age",
+  "Balance",
+  "EstimatedSalary",
+  "Tenure",
+  "BalanceSalaryRatio",
+  "TenureAgeRatio",
+  "ProductsPerTenure",
+  "SalaryRank",
+  "EngagementScore",
+  "Geography",
+  "Gender",
+  "HasCrCard",
+  "IsActiveMember",
+  "ZeroBalance",
+  "AgeBin",
+  "HighBalance"
+]

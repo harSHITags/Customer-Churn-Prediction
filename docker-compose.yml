@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - MODEL_PATH=ml/artifacts/ensemble_model.pkl
+      - PREPROCESSOR_PATH=ml/artifacts/preprocessor.pkl
+      - FEATURE_NAMES_PATH=ml/artifacts/feature_names.json
+      - SHAP_EXPLAINER_PATH=ml/artifacts/shap_explainer.pkl
+      - METRICS_PATH=ml/artifacts/metrics.json
+      - THRESHOLD_PATH=ml/artifacts/threshold.json
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend

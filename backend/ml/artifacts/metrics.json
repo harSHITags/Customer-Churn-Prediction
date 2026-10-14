@@ -1,0 +1,89 @@
+{
+  "model_type": "Soft Voting Ensemble (Random Forest + XGBoost)",
+  "training_samples": 8000,
+  "testing_samples": 2000,
+  "feature_count": 17,
+  "roc_auc": 0.8443528274036748,
+  "f1_score": 0.744,
+  "macro_f1": 0.6916613670964136,
+  "weighted_f1": 0.7669934285328862,
+  "precision": 0.4317295188556567,
+  "recall": 0.8157248157248157,
+  "confusion_matrix": {
+    "TN": 1156,
+    "FP": 437,
+    "FN": 75,
+    "TP": 332
+  },
+  "feature_importances": [
+    {
+      "feature": "Gender",
+      "importance": 0.19298436078240974
+    },
+    {
+      "feature": "AgeBin",
+      "importance": 0.16670091816978283
+    },
+    {
+      "feature": "Geography",
+      "importance": 0.15789049230650798
+    },
+    {
+      "feature": "Age",
+      "importance": 0.08922398453862866
+    },
+    {
+      "feature": "EngagementScore",
+      "importance": 0.06964643285929485
+    },
+    {
+      "feature": "IsActiveMember",
+      "importance": 0.05489273759849738
+    },
+    {
+      "feature": "HasCrCard",
+      "importance": 0.03798460893469258
+    },
+    {
+      "feature": "Balance",
+      "importance": 0.0301279052307146
+    },
+    {
+      "feature": "ProductsPerTenure",
+      "importance": 0.02808159721713958
+    },
+    {
+      "feature": "HighBalance",
+      "importance": 0.027178236264384634
+    },
+    {
+      "feature": "ZeroBalance",
+      "importance": 0.025104444731047896
+    },
+    {
+      "feature": "Tenure",
+      "importance": 0.02392418577647024
+    },
+    {
+      "feature": "TenureAgeRatio",
+      "importance": 0.021755215533257596
+    },
+    {
+      "feature": "BalanceSalaryRatio",
+      "importance": 0.01956483383379345
+    },
+    {
+      "feature": "SalaryRank",
+      "importance": 0.01893323674420116
+    },
+    {
+      "feature": "CreditScore",
+      "importance": 0.018078972345918137
+    },
+    {
+      "feature": "EstimatedSalary",
+      "importance": 0.01792783837502215
+    }
+  ],
+  "optimal_threshold": 0.26196746474865457
+}
