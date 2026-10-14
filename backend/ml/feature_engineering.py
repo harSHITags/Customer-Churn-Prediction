@@ -11,8 +11,9 @@ class FeatureEngineeringTransformer(BaseEstimator, TransformerMixin):
         if isinstance(X, pd.DataFrame):
             self.balance_q75_ = float(X['Balance'].quantile(0.75))
         else:
-            # Fallback if X is a numpy array
+            # Fallback  if X is a numpy array
             df = pd.DataFrame(X)
+
             # Standard index for Balance is 5 if standard dataset order is used
             self.balance_q75_ = float(df.iloc[:, 5].quantile(0.75))
         return self
